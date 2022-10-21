@@ -11,7 +11,7 @@ function LargeCard({data={}}){
                     <div className={styles.dataContent}>
                         {data?.content}
                     </div> 
-                    </div>
+                </div>
                 <div className={styles.img}>
                     <img src="favicon.ico" />
                 </div>
