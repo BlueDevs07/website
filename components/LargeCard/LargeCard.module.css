@@ -1,0 +1,38 @@
+.container{
+    background: white; 
+    width: 50%;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    border: 1px solid black;
+}
+.backg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.data{
+    z-index: 5;
+}
+.dataContent{
+    padding: 6px;
+    
+}
+.dataTitle{
+    padding: 6px;
+    font-size: 2.5rem;
+}
+.img{
+    float: right;
+    width: 900px;
+    z-index: 5;
+
+}
