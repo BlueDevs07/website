@@ -30,8 +30,8 @@ const Navbar = ({ NavItems = [] }) => {
       })}
       <div
         className="ml-auto cursor-pointer p-2"
-        onClick={() => {
-          signup;
+        onClick={async () => {
+          await signup();
         }}
       >
         <img
