@@ -1,5 +1,6 @@
-import { Button } from "@mui/material";
 import Link from "next/link";
+import { useContext } from "react";
+import { useAuth } from "../../auth/signin";
 /*
 NavItems structure:
 [
@@ -7,15 +8,16 @@ NavItems structure:
     {text: "Food", route: "/food"},
     {text: "About", route: "/about"},
 ]
-
 */
 
 const Navbar = ({ NavItems = [] }) => {
-  console.log(NavItems);
+  const { authUser, loading, signup, getAuthToken } = useAuth();
+  console.log(authUser);
+
   return (
-    <div className="w-full flex flex-row gap-x-2 items-center bg-[#E9E9E9]" >
+    <div className="w-full flex flex-row gap-x-2 items-center bg-[#E9E9E9]">
       <div className="mx-4 mr-9 my-2 font-bold">
-        <img src="Navbar/logo.png"/>
+        <img src="Navbar/logo.png" />
       </div>
       {NavItems.map((NavItem, index) => {
         return (
@@ -26,8 +28,16 @@ const Navbar = ({ NavItems = [] }) => {
           </Link>
         );
       })}
-      <div className="ml-auto cursor-pointer p-2">
-        <img src="Navbar/Dp.png" height="30px" width="30px" ></img>
+      <div
+        className="ml-auto cursor-pointer p-2"
+        onClick={() => {
+          signup;
+        }}
+      >
+        <img
+          className="w-10 rounded-full"
+          src={authUser ? authUser.photo : "Navbar/Dp.png"}
+        ></img>
       </div>
     </div>
   );
