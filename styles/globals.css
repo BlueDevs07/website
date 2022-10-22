@@ -16,7 +16,32 @@ a {
   
   box-sizing: border-box;
 }
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin:0 10%
+}
 
+.title{
+  margin:auto;
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+}
+.title:after{
+  content: "";
+  height:5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  border: 1px solid black;
+}
+.stats{
+  margin: 0 10% ;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
