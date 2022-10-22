@@ -42,6 +42,19 @@ a {
 .stats{
   margin: 0 10% ;
 }
+.bar{
+  padding:0 15%;
+}
+.btn{
+  border: 1px solid #0005;
+  margin: 4px 9px;
+  padding: 0 4px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.btn:hover{
+  border: 1px solid skyblue; 
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -21,7 +21,7 @@ function Record({title="", btns=[]}){
             <div className="ml-auto flex flex-row p gap-10">
            { btns.map((item, index)=>{
                 return(
-                    <div key={index} className="font-sans rounded-lg px-3 bg-[#fff] text-black cursor-pointer py-1 duration-200  ">
+                    <div key={index} className="font-sans rounded-lg px-3 bg-[#fff] text-black cursor-pointer py-1 duration-200 hover:bg-[#0006] hover:text-white ">
                           {item.text}
                     </div>
                 )

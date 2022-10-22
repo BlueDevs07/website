@@ -23,6 +23,9 @@
 .title{
     font-size: 2.5rem;
     color: white;
+    z-index: 5;
+    padding-bottom: 10px;
+    text-align: center;
 }
 .img{
     position: absolute;
