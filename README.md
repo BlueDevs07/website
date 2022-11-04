@@ -1,3 +1,7 @@
+A onprocess macrotracker website where one can login and audit his/her health.
+The person can keep track of his intake macros by giving the data of the food he has taken. 
+The person can search for a food item and a full detailed list is shown regarding the contents of the food item (protein content, etc)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
